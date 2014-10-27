@@ -1,0 +1,11 @@
+Santiago De La Torre
+
+1) I created the PowerUpStrategyDecoratorBall.java
+2) I proceed and add an instance of the PowerUpStrateGyDecoratorBall in PowerUpFactory 
+	and modify the conditional statement to add else if for our new powerup.
+	These two steps are pretty straight forward since we have the PowerUpStrategyDecoratorMiniBall.
+	Therefore, It is as easy as just to follow PowerUpStrategyDecoratorMiniBall in order to create
+	our new powerup.
+3)  Moreover, I created a class under the name BallsDisplay which as you could imagine it creates
+	a graphical display for the remaining balls.
+	Finally, I made the necessary in BreakOutGame and GameState to make the BallsDisplay work.

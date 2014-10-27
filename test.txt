@@ -1,0 +1,16 @@
+Santiago De La Torre	
+
+
+After creating the PowerUpStrategyDecoratorBall and add the new instance in PowerUpFactory, I could
+not get the new orange power up running. After a lot of testing I realized that the orange powerup
+that gives and extra ball to the user was supposed to be released in the third level. Moreover,
+I could not get the orange powerup to show up as appropriate. Later on, I found a bag in the PowerUpFactory 
+class, in the else-if statement. Since I copy-paste most of the powerupstrategydecoratorminiball, I realized 
+that I had     else if (desc.equals("miniballs")) instead of   else if (desc.equals("extra")). After fixing 
+this mistake the new orange powerup was being released in level 3.
+When creating the BallsDisplay class I had few mistakes since it was pretty straight forward. I struggle
+the most when I was trying to update the display, I kept getting null pointer exception. After a lot of 
+thinking and analyzing, I remembered that when we get null pointer exceptions is because we are not initializing
+a variable appropriately. Moreover, I kept trying to trace this mistake with System.out.println() all over my code
+until... BINGO! I realized that I did not initialized ballsDisplay and miniballsDisplay in my createSpriteGroups ()
+in BreakOutgame.java. After fixing this mistake, things were running smoothly.

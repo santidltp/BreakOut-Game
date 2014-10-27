@@ -1,0 +1,6 @@
+Santiago De La Torre
+ - Created BallsDisplay class to display the balls
+ - Created PowerUpStrategyDecoratorBall class to add a powerup for an additional ball- Changes in BreakOutGame class	  Added two BallDisplay fields ballsDisplay and miniBallsDisplay
+	  Added two SpriteGroup fields ballsLeft and miniBallsLeft.
+	  modified createSpriteGroup() method.	  Added updateDisplay() method.
+  - Changes in GameState class      Added getBaseBallsRemaining() and getBaseMiniballsRemaining() accessors.      Added addBall(int amount) method.   - Changes in PowerUpFactory class      Add instance of PowerUpStrategyDecoratorBall called extraball.      Add else if statement to assign orange power up for extraball.
